@@ -1,0 +1,19 @@
+{
+  "name": "vertx-graphql",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@vertx/web": "3.7.1",
+    "vertx-graphql": "latest"
+  },
+  "scripts": {
+    "postinstall": "es4x install",
+    "start": "es4x-launcher",
+    "test": "es4x-launcher test js:index.test.js"
+  },
+  "devDependencies": {
+    "@vertx/core": "3.7.1",
+    "@vertx/unit": "3.7.1"
+  }
+}

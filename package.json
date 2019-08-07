@@ -1,0 +1,43 @@
+{
+  "name": "vertx-graphql-cli",
+  "description": "Command line interface for rapid Vertx GraphQL development",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "echo 'No tests defined yet'",
+    "lint": "echo 'No linter added yet'",
+    "coverage": "echo 'No test coverage added yet'"
+  },
+  "bin": {
+    "vertx-graphql": "lib/index.js"
+  },
+  "homepage": "https://vertx-graphql.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vertx-graphql/vertx-graphql-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vertx-graphql/vertx-graphql-cli/issues"
+  },
+  "author": "Kai Wedekind <wedekind.kai@googlemail.com>",
+  "public": true,
+  "keywords": [
+    "Vert.x",
+    "Graphql",
+    "CLI"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "didyoumean": "^1.2.1",
+    "inquirer": "^6.5.0",
+    "minimist": "^1.2.0",
+    "semver": "^6.3.0",
+    "slash": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=8.9"
+  }
+}
