@@ -1,7 +1,7 @@
 {
   "name": "vertx-graphql-cli",
   "description": "Command line interface for rapid Vertx GraphQL development",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "index.js",
   "scripts": {
     "start": "node lib/index.js",
