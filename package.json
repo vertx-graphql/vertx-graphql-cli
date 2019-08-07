@@ -2,15 +2,15 @@
   "name": "vertx-graphql-cli",
   "description": "Command line interface for rapid Vertx GraphQL development",
   "version": "0.0.2",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "node bin/index.js",
     "test": "echo 'No tests defined yet'",
     "lint": "echo 'No linter added yet'",
     "coverage": "echo 'No test coverage added yet'"
   },
   "bin": {
-    "vertx-graphql": "lib/index.js"
+    "vertx-graphql": "bin/index.js"
   },
   "homepage": "https://vertx-graphql.github.io",
   "repository": {
@@ -32,6 +32,7 @@
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "didyoumean": "^1.2.1",
+    "envinfo": "^7.3.1",
     "inquirer": "^6.5.0",
     "minimist": "^1.2.0",
     "semver": "^6.3.0",
