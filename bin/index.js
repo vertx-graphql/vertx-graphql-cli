@@ -34,36 +34,26 @@ program
   .action((name, cmd) => {
     const options = cleanArgs(cmd)
 
-    /*
-    if (minimist(process.argv.slice(3))._.length > 1) {
-      console.log(chalk.yellow('\n Info: You provided more than one argument. The first one will be used as the app\'s name, the rest are ignored.'))
-    }
-    // --git makes commander to default git to true
-    if (process.argv.includes('-g') || process.argv.includes('--git')) {
-      options.forceGit = true
-    }
-    require('../lib/create')(name, options)
-    */
   })
 
 program
   .command('serve [entry]')
-  .description('serve a .js or .vue file in development mode with zero config')
+  .description('serve a .js file in development mode')
   .option('-o, --open', 'Open browser')
   .option('-c, --copy', 'Copy local url to clipboard')
   .option('-p, --port <port>', 'Port used by the server (default: 8080 or next available port)')
   .action((entry, cmd) => {
-    // loadCommand('serve', '@vue/cli-service-global').serve(entry, cleanArgs(cmd))
+    
   })
 
 program
   .command('build [entry]')
-  .description('build a .js or .vue file in production mode with zero config')
+  .description('build a .js file in production mode')
   .option('-t, --target <target>', 'Build target (app | lib | wc | wc-async, default: app)')
   .option('-n, --name <name>', 'name for lib or web-component mode (default: entry filename)')
   .option('-d, --dest <dir>', 'output directory (default: dist)')
   .action((entry, cmd) => {
-    // loadCommand('build', '@vue/cli-service-global').build(entry, cleanArgs(cmd))
+    
   })
 
 program
@@ -76,7 +66,7 @@ program
   .option('--headless', `Don't open browser on start and output port`)
   .action((cmd) => {
     environment.checkNodeVersion('>=8.6', 'vertx-graphql ui')
-    // require('../lib/ui')(cleanArgs(cmd))
+    
   })
 
 program
